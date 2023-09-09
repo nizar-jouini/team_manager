@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import SubNav1 from "./SubNav1";
 import axios from 'axios'
 
+
 const ListPlayers = (props) => {
   const { pageActive, setPageActive, players, setPlayers, setManagePageActive } = props;
 

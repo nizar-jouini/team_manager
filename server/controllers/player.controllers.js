@@ -4,7 +4,7 @@ module.exports.createPlayer = (req, res) => {
   // Mongoose's "create" method is run using our Player model to add a new product to our db's players collection.
   Player.create(req.body) //This will use whatever the body of the client's request sends over
     .then((player) => res.json({ player }))
-    .catch((err) => res.json(err));
+    .catch((err) => res.status(400).json(err));
 };
 
 module.exports.getAllPlayers = (req, res) => {
